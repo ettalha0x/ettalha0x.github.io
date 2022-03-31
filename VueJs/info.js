@@ -1,7 +1,7 @@
     var Profile = new Vue({
         el : '#Profile',
         data : {
-            image : 'img/me.jpeg',
+            image : 'img/photo13.jpeg',
             title : 'Noureddine Ettalhaouy',
             job : 'Front-End Developer',
         },
