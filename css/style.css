@@ -26,7 +26,7 @@ body{
     background-clip: border-box;
     border: 0 solid rgba(0,0,0,.125);
     border-radius: .25rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .card-body {
@@ -36,12 +36,16 @@ body{
 }
 
 /* Center the div and apply responsive padding */
-.gutters-sm {
+#profileInfo {
     display: flex;
     justify-content: center;
-    padding-top: 450px;
-    margin-right: -8px;
-    margin-left: -8px;
+    align-items: center;
+}
+.gutters-sm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Apply padding to columns within the .gutters-sm div */
