@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('resume.json')
+    fetch('../data/resume.json')
         .then(response => response.json())
         .then(resumeData => {
             // Load Header
