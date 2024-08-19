@@ -1,57 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Ettalha0x</title>
+    <title>Resume - Noureddine Ettalhaouy</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="container">
-    <script src="VueJs/vue.js"></script>
-    <div id="profileInfo" class="main-body">
-      <!--Profile Information -->
-      <div class="row gutters-sm">
-        <div class="col-lg-4" style="width: 32rem;">
-          <div class="card">
-            <div class="card-body">
-              <div class="d-flex flex-column align-items-center text-center">
-                <img :src="image" id="pfp-img" alt="Admin" class="rounded-circle" width="150">
-                <div class="mt-3">
-                  <h4>{{title}}</h4>
-                  <p class="text-secondary mb-1">{{job}}</p>
-                </div>
-              </div>
+    <div class="container">
+        <header id="header">
+            <h1 id="name"></h1>
+            <div id="contact-info">
+                <p id="phone"></p>
+                <p id="email"></p>
+                <p id="linkedin"></p>
+                <p id="address"></p>
             </div>
-          </div>
-        </div>
-      </div>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p id="about-description"></p>
+        </section>
+
+        <section id="education">
+            <h2>Education and Training</h2>
+            <ul id="education-list"></ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="digital-skills"></div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul id="projects-list"></ul>
+        </section>
     </div>
-  </div>
-  <script src="VueJs/info.js"></script>
-  <script>
-    let body_colors = ["AliceBlue", "AntiqueWhite", "Aqua", "Aquamarine", "Azure", "Beige", "Bisque", "Black", "BlanchedAlmond", "Blue", "BlueViolet", "Brown", "BurlyWood", "CadetBlue", "Chartreuse", "Chocolate", "Coral", "CornflowerBlue", "Cornsilk", "Crimson", "Cyan", "DarkBlue", "DarkCyan", "DarkGoldenRod", "DarkGray", "DarkGrey", "DarkGreen", "DarkKhaki", "DarkMagenta", "DarkOliveGreen", "Darkorange", "DarkOrchid", "DarkRed", "DarkSalmon", "DarkSeaGreen", "DarkSlateBlue", "DarkSlateGray", "DarkSlateGrey", "DarkTurquoise", "DarkViolet", "DeepPink", "DeepSkyBlue", "DimGray", "DimGrey", "DodgerBlue", "FireBrick", "FloralWhite", "ForestGreen", "Fuchsia", "Gainsboro", "GhostWhite", "Gold", "GoldenRod", "Gray", "Grey", "Green", "GreenYellow", "HoneyDew", "HotPink", "IndianRed", "Indigo", "Ivory", "Khaki", "Lavender", "LavenderBlush", "LawnGreen", "LemonChiffon", "LightBlue", "LightCoral", "LightCyan", "LightGoldenRodYellow", "LightGray", "LightGrey", "LightGreen", "LightPink", "LightSalmon", "LightSeaGreen", "LightSkyBlue", "LightSlateGray", "LightSlateGrey", "LightSteelBlue", "LightYellow", "Lime", "LimeGreen", "Linen", "Magenta", "Maroon", "MediumAquaMarine", "MediumBlue", "MediumOrchid", "MediumPurple", "MediumSeaGreen", "MediumSlateBlue", "MediumSpringGreen", "MediumTurquoise", "MediumVioletRed", "MidnightBlue", "MintCream", "MistyRose", "Moccasin", "NavajoWhite", "Navy", "OldLace", "Olive", "OliveDrab", "Orange", "OrangeRed", "Orchid", "PaleGoldenRod", "PaleGreen", "PaleTurquoise", "PaleVioletRed", "PapayaWhip", "PeachPuff", "Peru", "Pink", "Plum", "PowderBlue", "Purple", "Red", "RosyBrown", "RoyalBlue", "SaddleBrown", "Salmon", "SandyBrown", "SeaGreen", "SeaShell", "Sienna", "Silver", "SkyBlue", "SlateBlue", "SlateGray", "SlateGrey", "Snow", "SpringGreen", "SteelBlue", "Tan", "Teal", "Thistle", "Tomato", "Turquoise", "Violet", "Wheat", "White", "WhiteSmoke", "Yellow", "YellowGree"];
-    let div_colors = ["LightPink", "LightSalmon", "LightCoral", "LightSeaGreen", "LightGreen", "LightSkyBlue", "LightSlateGray", "LightSteelBlue", "LightYellow", "LightGoldenRodYellow", "LightCyan", "LightBlue", "Lavender", "LavenderBlush", "MistyRose", "PaleTurquoise", "PaleGreen", "PapayaWhip", "SeaShell", "LemonChiffon", "AliceBlue", "HoneyDew", "FloralWhite", "OldLace", "Linen", "WhiteSmoke"];
 
-
-    let i = 0;
-    let j = 0
-    let body_ = document.getElementsByTagName('body')[0]
-    let div_ = document.getElementsByClassName('card')[0]
-
-    setInterval(() => {
-      body_.style.setProperty('background-color', body_colors[i])
-      div_.style.setProperty('background-color', div_colors[j])
-      if (i == 147)
-        i = 0;
-      if (j == 25)
-        j = 0;
-      i++
-      j++
-    },500);
-  </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
