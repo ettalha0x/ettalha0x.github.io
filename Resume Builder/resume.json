@@ -1,0 +1,102 @@
+{
+    "header": {
+        "name": "Noureddine Ettalhaouy",
+        "phone": "(+212) 0674427085 (Mobile)",
+        "email": "ettalhaoui.study@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/ettalha0x/",
+        "address": "Tetouan, Morocco (Study)"
+    },
+    "about_me": {
+        "description": "Hi there! I'm Noureddine, a dedicated software engineering student at 1337 Coding School & ALX Africa, eagerly pursuing a career in software engineering. My passion for technology fuels my drive to learn and grow, and I'm excited to put my skills into practice."
+    },
+    "education_and_training": [
+        {
+            "institution": "42 CURSUS - 1337 Coding School",
+            "dates": "09/2022 – CURRENT",
+            "location": "Tetouan, Morocco",
+            "field_of_study": "Software engineering"
+        },
+        {
+            "institution": "BACHELOR'S DEGREE - Abdelmalek Essaadi University",
+            "dates": "09/2022 – 06/2023",
+            "location": "Tetouan, Morocco",
+            "field_of_study": "Network Administration and Information Systems Security"
+        },
+        {
+            "institution": "UNIVERSITY DIPLOMA OF TECHNOLOGY - Cadi Ayyad University",
+            "dates": "09/2019 – 06/2021",
+            "location": "Marrakech, Morocco",
+            "field_of_study": "Software engineering"
+        }
+    ],
+    "language_skills": {
+        "english": "B2 (Independent user) in Listening, Reading, Spoken production, Spoken interaction, and Writing"
+    },
+    "digital_skills": [
+        {
+            "category": "Programming Languages",
+            "level": "Advanced",
+            "skills": ["C", "C++"]
+        },
+        {
+            "category": "Front-end Web Development",
+            "level": "Medium",
+            "skills": ["HTML", "CSS", "Bootstrap"]
+        },
+        {
+            "category": "Back-end Web Development",
+            "level": "Medium",
+            "skills": ["JavaScript", "Python", "Flask", "Django"]
+        },
+        {
+            "category": "Databases",
+            "level": "Familiar",
+            "skills": ["SQL", "MySQL", "PostgreSQL", "MariaDB"]
+        },
+        {
+            "category": "Systems Administration",
+            "level": "Familiar",
+            "skills": ["Linux", "Virtualisation", "Docker"]
+        },
+        {
+            "category": "Dev Tools",
+            "skills": ["Git"]
+        },
+        {
+            "category": "Soft Skills",
+            "skills": ["Problem solving", "Teamwork & collaboration", "Time management"]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Minishell",
+            "description": "A mini implementation of bash in C. Learned about processes, file descriptors, parsing algorithms, and computer theory.",
+            "link": "https://github.com/ettalha0x/minishell/"
+        },
+        {
+            "title": "Philosophers",
+            "description": "Modeling the Philosophers' Dinner problem using threads, mutex, semaphores, and child processes.",
+            "link": "https://github.com/ettalha0x/Philosophers/"
+        },
+        {
+            "title": "C++ Modules",
+            "description": "10 modules to deepen understanding of classes, polymorphisms, templates, casts, and containers in C++.",
+            "link": "https://github.com/ettalha0x/CPP-Pool"
+        },
+        {
+            "title": "Webserv",
+            "description": "Building a C++98-compatible HTTP web server from scratch, handling various HTTP requests and serving static and dynamic content.",
+            "link": "https://github.com/ettalha0x/webserv"
+        },
+        {
+            "title": "Inception",
+            "description": "System administration project using Docker to virtualize and manage multiple services (WordPress, MariaDB, and NGINX).",
+            "link": "https://github.com/ettalha0x/inception"
+        },
+        {
+            "title": "ft_transcendence (Current)",
+            "description": "Developing a web application for real-time multiplayer Pong games using Django, implementing authentication with JWT, 2FA and OAuth2.",
+            "link": ""
+        }
+    ]
+}
