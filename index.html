@@ -1,47 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Noureddine Ettalhaouy</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>so_long | A Maze Puzzle Game</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <div class="container">
-        <header id="header">
-            <h1 id="name"></h1>
-            <div id="contact-info">
-                <p id="phone"></p>
-                <p id="email"></p>
-                <p id="linkedin"></p>
-                <p id="address"></p>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">so_long</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <!-- Intro Section -->
+        <div class="hero-section">
+            <img src="./src/so_long_cover.png" alt="so_long Cover Image" class="cover-image">
+            <h1>so_long</h1>
+            <p>Escape the maze, collect treasures, and find your way out in this classic 2D adventure.</p>
+            <a href="https://github.com/ettalha0x/so_long" class="cta-btn">View Project</a>
+        </div>
+    </header>
+
+    <!-- Feature Section -->
+    <section id="features" class="section">
+        <h2>Features</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <img src="./src/so_long_map.png" alt="Map Validation">
+                <h3>Map Validation</h3>
+                <p class="feature-toggle">See more</p>
+                <div class="feature-content">
+                    <p>Ensures the player’s environment is correctly structured with valid paths, exit points, and boundaries. Every map is checked for accuracy before the game begins.</p>
+                </div>
             </div>
-        </header>
+            <div class="feature-item">
+                <img src="./src/so_long_player.jpg" alt="Player Movement">
+                <h3>Player Movement</h3>
+                <p class="feature-toggle">See more</p>
+                <div class="feature-content">
+                    <p>Navigate through the maze using intuitive keyboard controls. Collect items and avoid dead ends as you make your way to the exit.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img src="./src/so_long_coin.png" alt="Collectibles and Exit">
+                <h3>Collectibles and Exit</h3>
+                <p class="feature-toggle">See more</p>
+                <div class="feature-content">
+                    <p>The objective of the game is to collect all items and find the exit. With each collectible, the path forward becomes clearer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p id="about-description"></p>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About This Project</h2>
+        <p>
+            so_long was inspired by classic maze and puzzle games.
+            The challenge of navigating complex environments while collecting items and avoiding traps has always fascinated me.
+            I chose this project as part of the 42 curriculum to dive deeper into game development, understand rendering techniques, and work closely with low-level programming in C.
+        </p>
+        <h3>Team</h3>
+        <ul>
+            <li>Project Lead: Noureddine Ettalhaouy</li>
+                <a href="https://www.linkedin.com/in/ettalha0x/">LinkedIn</a> |
+                <a href="https://github.com/ettalha0x">GitHub</a> |
+                <a href="https://x.com/ettalha0x">Twitter</a>
+            </li>
+        </ul>
+    </section>
 
-        <section id="education">
-            <h2>Education and Training</h2>
-            <ul id="education-list"></ul>
-        </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const featureItems = document.querySelectorAll('.feature-item');
+        
+            featureItems.forEach(item => {
+                const toggle = item.querySelector('.feature-toggle');
+                toggle.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div id="digital-skills"></div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul id="projects-list"></ul>
-        </section>
-    </div>
-
-    <script src="js/script.js"></script>
 </body>
-
 </html>
