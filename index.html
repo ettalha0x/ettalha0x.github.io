@@ -3,91 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>so_long | A Maze Puzzle Game</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Noureddine Ettalhaouy - Resume</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>NOUREDDINE ETTALHAOUY</h1>
+            <div class="contact-info">
+                <a href="tel:212674427085" target="_blank"><i class="fas fa-phone"></i> 212674427085</a>
+                <a href="mailto:ettalhaoui.study@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/ettalha0x" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.github.com/ettalha0x" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </header>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <div class="logo">so_long</div>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
+        <div class="section">
+            <h2>Summary</h2>
+            <p>Aspiring Software Developer with a strong educational background in Software Engineering, with practical exposure to programming languages like C, C++, Python, JavaScript, and web frameworks. Eager to leverage effective problem-solving and teamwork skills in a dynamic software development environment, contributing to forward-thinking projects and continuous learning.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li class="education-item">
+                    <div class="education-header">
+                        <span class="education-school">1337 Coding School</span>
+                        <span class="education-year">2024</span>
+                    </div>
+                    <div class="education-details">
+                        Certificate | Software Engineering
+                    </div>
+                </li>
+                <li class="education-item">
+                    <div class="education-header">
+                        <span class="education-school">ALX Africa</span>
+                        <span class="education-year">2024</span>
+                    </div>
+                    <div class="education-details">
+                        Certificate | Software Engineering
+                    </div>
+                </li>
+                <li class="education-item">
+                    <div class="education-header">
+                        <span class="education-school">Abdelmalek Essaadi University</span>
+                        <span class="education-year">2023</span>
+                    </div>
+                    <div class="education-details">
+                        Bachelor Degree | Network Administration And Security Of Information Systems
+                    </div>
+                </li>
+                <li class="education-item">
+                    <div class="education-header">
+                        <span class="education-school">Cadi Aayad University</span>
+                        <span class="education-year">2021</span>
+                    </div>
+                    <div class="education-details">
+                        Associate Degree | Software Engineering
+                    </div>
+                </li>
             </ul>
-        </nav>
-        <!-- Intro Section -->
-        <div class="hero-section">
-            <img src="./src/so_long_cover.png" alt="so_long Cover Image" class="cover-image">
-            <h1>so_long</h1>
-            <p>Escape the maze, collect treasures, and find your way out in this classic 2D adventure.</p>
-            <a href="https://github.com/ettalha0x/so_long" class="cta-btn">View Project</a>
         </div>
-    </header>
 
-    <!-- Feature Section -->
-    <section id="features" class="section">
-        <h2>Features</h2>
-        <div class="features-grid">
-            <div class="feature-item">
-                <img src="./src/so_long_map.png" alt="Map Validation">
-                <h3>Map Validation</h3>
-                <p class="feature-toggle">See more</p>
-                <div class="feature-content">
-                    <p>Ensures the player’s environment is correctly structured with valid paths, exit points, and boundaries. Every map is checked for accuracy before the game begins.</p>
-                </div>
+        <div class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>C / C++</li>
+                <li>HTML / CSS / BOOTSTRAP</li>
+                <li>JAVASCRIPT / PYTHON / FLASK / DJANGO</li>
+                <li>SQL | MYSQL | POSTGRESQL | MARIADB</li>
+                <li>LINUX | VIRTUALISATION | DOCKER</li>
+                <li>GIT</li>
+                <li>PROBLEM SOLVING</li>
+                <li>TEAM WORK & COLLABORATION</li>
+                <li>TIME MANAGEMENT</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Minishell</h3>
+                <p>This project involves creating a mini implantation of bash in C. I learned a lot about processes, file descriptors, parsing algorithms and many other amazing things.</p>
+                <p><a href="https://github.com/ettalha0x/minishell" target="_blank">View Project</a></p>
             </div>
-            <div class="feature-item">
-                <img src="./src/so_long_player.jpg" alt="Player Movement">
-                <h3>Player Movement</h3>
-                <p class="feature-toggle">See more</p>
-                <div class="feature-content">
-                    <p>Navigate through the maze using intuitive keyboard controls. Collect items and avoid dead ends as you make your way to the exit.</p>
-                </div>
+            <div class="project">
+                <h3>Webserv</h3>
+                <p>This project aims to build a C++98 compatible HTTP web server from scratch that can handle HTTP GET, POST and DELETE requests and can serve static files from a specific root directory or dynamic content using CGI. It is also able to handle multiple client connections concurrently.</p>
+                <p><a href="https://github.com/ettalha0x/webserv" target="_blank">View Project</a></p>
             </div>
-            <div class="feature-item">
-                <img src="./src/so_long_coin.png" alt="Collectibles and Exit">
-                <h3>Collectibles and Exit</h3>
-                <p class="feature-toggle">See more</p>
-                <div class="feature-content">
-                    <p>The objective of the game is to collect all items and find the exit. With each collectible, the path forward becomes clearer.</p>
-                </div>
+            <div class="project">
+                <h3>Inception</h3>
+                <p>In this project I dove deep into system administration by leveraging Docker to virtualize and manage multiple services. The goal was to create and orchestrate three Docker images: WordPress, Mariadb and Nginx. Using Docker and Docker Compose, I successfully built and linked these images to work seamlessly together, creating a scalable and maintainable virtual environment.</p>
+                <p><a href="https://github.com/ettalha0x/inception" target="_blank">View Project</a></p>
+            </div>
+            <div class="project">
+                <h3>Ft_transcendence</h3>
+                <p>In this project I developed a web application for real-time multiplayer Pong game using Django for backend, focused on creating a secure and efficient authentication system, implementing Two-Factor authentication (2FA), and utilizing JSON Web Tokens (JWT) for secure user sessions. Responsibilities included designing and developing the user authentication and management features, ensuring robust security measures, and integrating the front end with vanilla JavaScript. Additionally configured Docker for containerization to facilitate seamless deployment and scalability.</p>
+                <p><a href="https://github.com/ettalha0x/ft_transcendence" target="_blank">View Project</a></p>
             </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About This Project</h2>
-        <p>
-            so_long was inspired by classic maze and puzzle games.
-            The challenge of navigating complex environments while collecting items and avoiding traps has always fascinated me.
-            I chose this project as part of the 42 curriculum to dive deeper into game development, understand rendering techniques, and work closely with low-level programming in C.
-        </p>
-        <h3>Team</h3>
-        <ul>
-            <li>Project Lead: Noureddine Ettalhaouy</li>
-                <a href="https://www.linkedin.com/in/ettalha0x/">LinkedIn</a> |
-                <a href="https://github.com/ettalha0x">GitHub</a> |
-                <a href="https://x.com/ettalha0x">Twitter</a>
-            </li>
-        </ul>
-    </section>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const featureItems = document.querySelectorAll('.feature-item');
-        
-            featureItems.forEach(item => {
-                const toggle = item.querySelector('.feature-toggle');
-                toggle.addEventListener('click', () => {
-                    item.classList.toggle('active');
-                });
-            });
-        });
-    </script>
-
+    </div>
 </body>
 </html>

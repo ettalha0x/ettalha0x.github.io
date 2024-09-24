@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+header {
+    background-color: #0077B5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+h1 {
+    margin: 0;
+}
+h2 {
+    color: #0077B5;
+    border-bottom: 2px solid #0077B5;
+    padding-bottom: 5px;
+}
+.contact-info {
+    margin-top: 10px;
+}
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.section {
+    margin-bottom: 30px;
+}
+.education-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+.education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #0077B5;
+    transition: all 0.3s ease;
+}
+.education-item:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transform: translateX(5px);
+}
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.education-school {
+    font-weight: bold;
+    color: #0077B5;
+    font-size: 1.1em;
+}
+.education-year {
+    background-color: #0077B5;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+.education-details {
+    font-style: italic;
+    color: #555;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+}
+.skills-list li {
+    background-color: #e1ecf4;
+    color: #0077B5;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #0077B5;
+    transition: all 0.3s ease;
+}
+.project:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transform: translateX(5px);
+}
+.project h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #0077B5;
+}
+.project p {
+    margin-top: 0;
+}
+.project a {
+    color: #0077B5;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project a:hover {
+    text-decoration: underline;
+}
