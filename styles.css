@@ -45,6 +45,22 @@ h1 {
     margin-bottom: 30px;
     text-align: center;
 }
+.tagline span {
+    display: inline-block;
+}
+.tagline span:not(:last-child)::after {
+    content: " | ";
+    margin: 0 5px;
+}
+@media (max-width: 768px) {
+    .tagline span {
+        display: block;
+    }
+    .tagline span:not(:last-child)::after {
+        content: "";
+        margin: 0;
+    }
+}
 .buttons {
     display: flex;
     flex-direction: column;
