@@ -57,7 +57,7 @@ h1 {
         display: block;
     }
     .tagline span:not(:last-child)::after {
-        content: "";
+        content: ", ";
         margin: 0;
     }
 }
